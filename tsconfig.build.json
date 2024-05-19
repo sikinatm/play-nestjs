@@ -1,0 +1,14 @@
+{
+  "extends": "./tsconfig.json",
+  "compilerOptions": {
+    // imoprt スコープの範囲を src 配下に狭める
+    "rootDir": "./src",
+  },
+  
+  "exclude": ["node_modules", "test", "dist", "**/*spec.ts", ".yarn"],
+  // 必須
+  // トランスパイルの範囲を ./src/ 配下のみに指定
+  "include": [
+    "./src/**/*",
+  ],
+}
